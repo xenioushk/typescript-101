@@ -143,6 +143,8 @@ const user: UserAccount = {
   balance: 0,
 }
 
-// Print User Name: ABC. Account No: 234-234-212 and balance is: 0
-console.log(`User Name: ${user.name}. Account No: ${user.accountId} and balance is: ${user.balance}`)
+// Print User Name: ABC.
+console.log(`User Name: ${user.name}.`)
+// Account No: 234-234-212 and balance is: 0
+console.log(`Account No: ${user.accountId} and balance is: ${user.balance}`)
 ```
