@@ -103,3 +103,17 @@ const User: UserInterface = {
 
 console.log(User.sayHello("Mahbub")) // Hello Mahbub
 ```
+
+## Example of Types Union
+
+```bash
+//  Types Union
+
+const getTheId = (id: number | string): void => {
+  console.log(`The id is ${id}`)
+}
+
+// call the function.
+// You could pass 123 or abc123. Both are valid.
+getTheId("10")
+```
