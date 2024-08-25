@@ -27,3 +27,14 @@ let ids:number[]=[1,2,3,4,5,6];
 let x:any = "My Shop";
 let mixedItems: any[]=["Shop", 1, true];
 ```
+
+## Example of a function
+
+```bash
+const concatTheNumbers = ( a:number, b:number ):number=>{
+  return a+b;
+}
+
+const result = concatTheNumbers(3,4);
+console.log(result); // return 7
+```
