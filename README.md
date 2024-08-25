@@ -38,3 +38,25 @@ const concatTheNumbers = ( a:number, b:number ):number=>{
 const result = concatTheNumbers(3,4);
 console.log(result); // return 7
 ```
+
+## Example of Object & Interface
+
+```bash
+interface UserInterface {
+  id: number
+  name: string
+  age: number
+  gender?: string
+}
+
+const User: UserInterface = {
+  id: 123,
+  name: "Mahbub",
+  age: 24
+}
+
+console.log(User.id) // print 123
+console.log(User.name) // print Mahbub
+console.log(User.age) // print 24
+console.log(User.gender) // print undefined
+```
