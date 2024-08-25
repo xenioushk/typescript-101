@@ -36,30 +36,30 @@ node index.js
 
 ## Examples of types
 
-```bash
-let id:number=3;
-let company:string= "BlueWindLab";
-let isOpen:boolean = true;
+```typescript
+let id: number = 3
+let company: string = "BlueWindLab"
+let isOpen: boolean = true
 
-let ids:number[]=[1,2,3,4,5,6];
-let x:any = "My Shop";
-let mixedItems: any[]=["Shop", 1, true];
+let ids: number[] = [1, 2, 3, 4, 5, 6]
+let x: any = "My Shop"
+let mixedItems: any[] = ["Shop", 1, true]
 ```
 
 ## Example of a function
 
-```bash
-const concatTheNumbers = ( a:number, b:number ):number=>{
-  return a+b;
+```typescript
+const concatTheNumbers = (a: number, b: number): number => {
+  return a + b
 }
 
-const result = concatTheNumbers(3,4);
-console.log(result); // return 7
+const result = concatTheNumbers(3, 4)
+console.log(result) // return 7
 ```
 
 ## Example of Object & Interface
 
-```bash
+```typescript
 interface UserInterface {
   id: number
   name: string
@@ -70,7 +70,7 @@ interface UserInterface {
 const User: UserInterface = {
   id: 123,
   name: "Mahbub",
-  age: 24
+  age: 24,
 }
 
 console.log(User.id) // print 123
@@ -81,7 +81,7 @@ console.log(User.gender) // print undefined
 
 ## Example of adding method to an Interface
 
-```bash
+```typescript
 // Add a method in to interface.
 
 interface UserInterface {
@@ -106,7 +106,7 @@ console.log(User.sayHello("Mahbub")) // Hello Mahbub
 
 ## Example of Types Union
 
-```bash
+```typescript
 //  Types Union
 
 const getTheId = (id: number | string): void => {
@@ -116,4 +116,33 @@ const getTheId = (id: number | string): void => {
 // call the function.
 // You could pass 123 or abc123. Both are valid.
 getTheId("10")
+```
+
+## Example of Types intersection.
+
+```typescript
+// First Type.
+interface UserInfo {
+  id: number
+  name: string
+}
+
+// Second Type.
+interface AccountInfo {
+  accountId: string
+  balance: number
+}
+
+// Intersect Two Interfaces.
+type UserAccount = UserInfo & AccountInfo
+
+const user: UserAccount = {
+  id: 12,
+  name: "ABC",
+  accountId: "234-234-212",
+  balance: 0,
+}
+
+// Print User Name: ABC. Account No: 234-234-212 and balance is: 0
+console.log(`User Name: ${user.name}. Account No: ${user.accountId} and balance is: ${user.balance}`)
 ```
