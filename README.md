@@ -78,3 +78,28 @@ console.log(User.name) // print Mahbub
 console.log(User.age) // print 24
 console.log(User.gender) // print undefined
 ```
+
+## Example of adding method to an Interface
+
+```bash
+// Add a method in to interface.
+
+interface UserInterface {
+  id: number
+  name: string
+  age: number
+  gender?: string
+  sayHello(message: string): string
+}
+
+const User: UserInterface = {
+  id: 123,
+  name: "Mahbub",
+  age: 24,
+  sayHello(message) {
+    return `Hello ${message}`
+  },
+}
+
+console.log(User.sayHello("Mahbub")) // Hello Mahbub
+```
