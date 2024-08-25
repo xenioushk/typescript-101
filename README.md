@@ -16,6 +16,24 @@ Go to the project directory and run the following command. It will generate the 
 tsc --init
 ```
 
+## Compile & run the code
+
+Create a file **index.ts** and write all the codes. However, We can not run the `.ts` file directrly. So, we need to compile `index.ts` file, and compile it to `index.js` file.
+
+Run the following command.
+
+**Compile the file**
+
+```bash
+tsc
+```
+
+**Run the file**
+
+```bash
+node index.js
+```
+
 ## Examples of types
 
 ```bash
