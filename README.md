@@ -208,3 +208,26 @@ userAges.addItem(33)
 const age = userAges.getItem(0)
 console.log(age) // print 38
 ```
+
+## Example of Read-only property
+
+```javascript
+// Read only.
+
+interface UserInterface {
+  userName: string
+  firstName: string
+  lastName: string
+  readonly ssn: string
+}
+
+const user: UserInterface = {
+  userName: "mahbub007",
+  firstName: "Mahbub",
+  lastName: "Khan",
+  ssn: "09283Abx",
+}
+
+user.ssn = "pxsy" // Changing the value is not possible!
+console.log(user.ssn)
+```
