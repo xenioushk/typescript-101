@@ -1,5 +1,9 @@
 # TypeScript 101
 
+[TypeScript](https://www.typescriptlang.org/) is one of the best tools that helps developers write **error-free** JavaScript code. I just started learning TypeScript a few days ago, and I thought it would be a good idea to put down all of the example scripts for future reference.
+
+This documentation gives you an idea regarding TypeScript installation and initialization steps. Additionally, it offers some sample codes that you can type into your personal computer at your convenience.
+
 ## Installation
 
 Run the following command to install TypeScript globally.
@@ -33,6 +37,12 @@ tsc
 ```bash
 node index.js
 ```
+
+## Try TypeScript Online
+
+You can also go to the TypeScript online playground to test the code.
+
+[Type Script Play Ground](https://www.typescriptlang.org/play/)
 
 ## Examples of types
 
