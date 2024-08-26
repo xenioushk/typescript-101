@@ -148,3 +148,26 @@ console.log(`User Name: ${user.name}.`)
 // Account No: 234-234-212 and balance is: 0
 console.log(`Account No: ${user.accountId} and balance is: ${user.balance}`)
 ```
+
+## Example of enum
+
+```javascript
+// Enum Example.
+
+enum ApiRequestStatus {
+  loading = "Loading",
+  success = "Success",
+}
+
+const CallTheApi = (status: ApiRequestStatus): void => {
+  if (status === ApiRequestStatus.loading) {
+    console.log("Loading.")
+  } else if (status === ApiRequestStatus.success) {
+    console.log("Success")
+  } else {
+    console.log("Something is wrong!")
+  }
+}
+
+CallTheApi(ApiRequestStatus.loading) // print the Loading. message
+```
