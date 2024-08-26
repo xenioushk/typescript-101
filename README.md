@@ -192,7 +192,7 @@ class StorageContainer<T> {
 
 // Initalize instances.
 
-// Usernames
+// User Names
 
 const userNames = new StorageContainer<string>()
 userNames.addItem("mahbub")
@@ -200,7 +200,7 @@ userNames.addItem("alam")
 const firstName = userNames.getItem(0)
 console.log(firstName) // print mahbub
 
-// Userage
+// User Ages
 const userAges = new StorageContainer<number>()
 userAges.addItem(38)
 userAges.addItem(33)
