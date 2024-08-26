@@ -171,3 +171,40 @@ const CallTheApi = (status: ApiRequestStatus): void => {
 
 CallTheApi(ApiRequestStatus.loading) // print the Loading. message
 ```
+
+## Example of Generics
+
+```javascript
+// Define A StorageContainer Generics
+
+class StorageContainer<T> {
+  private contents: T[]
+  constructor() {
+    this.contents = []
+  }
+  addItem(item: T): void {
+    this.contents.push(item)
+  }
+  getItem(index: number): T | undefined {
+    return this.contents[index]
+  }
+}
+
+// Initalize instances.
+
+// Usernames
+
+const userNames = new StorageContainer<string>()
+userNames.addItem("mahbub")
+userNames.addItem("alam")
+const firstName = userNames.getItem(0)
+console.log(firstName) // print mahbub
+
+// Userage
+const userAges = new StorageContainer<number>()
+userAges.addItem(38)
+userAges.addItem(33)
+
+const age = userAges.getItem(0)
+console.log(age) // print 38
+```
